@@ -124,9 +124,7 @@ fun WheelTimePicker(
                         val distance = kotlin.math.abs(hour - currentHour)
                         val alpha = when (distance) {
                             0 -> 1f
-                            1 -> 0.7f
-                            2 -> 0.4f
-                            else -> 0.2f
+                            else -> 0.7f
                         }
                         val fontSize = 24.sp
                         
