@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/widget_background"
+    android:gravity="center">
+
+    <!-- 当前时间 -->
+    <TextView
+        android:id="@+id/widget_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:34"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp" />
+
+    <!-- 当前日期 -->
+    <TextView
+        android:id="@+id/widget_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12月25日 星期一"
+        android:textSize="14sp"
+        android:textColor="#E0E0E0"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 下一个闹钟信息 -->
+    <TextView
+        android:id="@+id/widget_next_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7小时30分钟后响铃"
+        android:textSize="12sp"
+        android:textColor="#FFD700"
+        android:background="@drawable/alarm_info_background"
+        android:padding="6dp"
+        android:drawableLeft="@drawable/ic_alarm_small"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout> 

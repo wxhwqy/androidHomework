@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">闹钟应用</string>
+    <string name="widget_description">显示当前时间和下一个闹钟倒计时</string>
+</resources>
