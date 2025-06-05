@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test4" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 自定义颜色 -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <!-- 状态栏设置 -->
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.Test4" parent="Base.Theme.Test4" />
+    
+    <!-- NoActionBar主题 -->
+    <style name="Theme.Test4.NoActionBar" parent="Theme.Test4">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 确保内容不延伸到状态栏下 -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>
