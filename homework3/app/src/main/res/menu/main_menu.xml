@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_city"
+        android:title="添加城市"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="刷新"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_api_test"
+        android:title="API测试"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_clear_cache"
+        android:title="清理缓存"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_update_location"
+        android:title="更新当前位置"
+        app:showAsAction="never" />
+
+
+</menu> 

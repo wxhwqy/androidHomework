@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- 天气APP主题颜色 -->
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_blue_dark">#1976D2</color>
+    <color name="accent_color">#FF9800</color>
+    
+    <!-- 背景颜色 -->
+    <color name="background_color">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- 按钮颜色 -->
+    <color name="button_primary">#2196F3</color>
+    <color name="button_secondary">#9E9E9E</color>
+    
+    <!-- 天气背景渐变色 -->
+    <color name="sky_blue_start">#87CEEB</color>
+    <color name="sky_blue_end">#4682B4</color>
+    
+    <!-- 半透明色 -->
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="black_transparent">#80000000</color>
+</resources>

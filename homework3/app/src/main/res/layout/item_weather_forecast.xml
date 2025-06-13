@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="#30FFFFFF"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- 日期 -->
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- 最高温度 -->
+        <TextView
+            android:id="@+id/text_max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25°"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 最低温度 -->
+        <TextView
+            android:id="@+id/text_min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15°"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:alpha="0.8"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_max_temp"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_max_temp" />
+
+        <!-- 白天天气 -->
+        <TextView
+            android:id="@+id/text_day_weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="白天: 晴"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/text_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_min_temp" />
+
+        <!-- 夜间天气 -->
+        <TextView
+            android:id="@+id/text_night_weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="夜间: 多云"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:alpha="0.8"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/text_day_weather"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_min_temp" />
+
+        <!-- 湿度 -->
+        <TextView
+            android:id="@+id/text_humidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="湿度: 65%"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:alpha="0.7"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/text_night_weather"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_wind" />
+
+        <!-- 风力 -->
+        <TextView
+            android:id="@+id/text_wind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="东风 3级"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:alpha="0.7"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            app:layout_constraintTop_toBottomOf="@id/text_night_weather"
+            app:layout_constraintStart_toEndOf="@id/text_humidity"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView> 

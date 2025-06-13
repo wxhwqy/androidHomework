@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">homework3</string>
+    <string name="widget_description">2×2紧凑型天气小组件，显示当前位置温度和天气状况</string>
+    <string name="widget_loading">正在加载天气...</string>
+    <string name="widget_error">天气加载失败</string>
+    <string name="widget_no_location">无位置信息</string>
+</resources>
